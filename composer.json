@@ -1,0 +1,59 @@
+{
+    "name": "rennokki/plans",
+    "description": "Laravel Plans is a package for SaaS apps that need management over plans, features, subscriptions, events for plans or limited, countable features.",
+    "keywords": [
+        "eloquent",
+        "laravel",
+        "subscription",
+        "plan",
+        "plans",
+        "model",
+        "saas"
+    ],
+    "homepage": "https://github.com/rennokki/plans",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Renoki",
+            "email": "rennokki@gmail.com",
+            "homepage": "https://twitter.com/rennokki",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.8.0",
+        "stripe/stripe-php": "^6.11.0",
+        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0"
+    },
+    "require-dev": {
+        "orchestra/database": "~3.5.0|~3.6.0|~3.7.0|~3.8.0",
+        "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0|~3.8.0",
+        "phpunit/phpunit": "^6.2|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rennokki\\Plans\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rennokki\\Plans\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:basic": "phpunit --group basic",
+        "test:stripe": "phpunit --group stripe"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rennokki\\Plans\\PlansServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
