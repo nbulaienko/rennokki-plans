@@ -22,8 +22,7 @@
     ],
     "require": {
         "doctrine/dbal": "^2.8.0",
-        "stripe/stripe-php": "^6.11.0",
-        "laravel/framework": "^7.0"
+        "stripe/stripe-php": "^6.11.0"
     },
     "require-dev": {
         "orchestra/database": "~3.5.0|~3.6.0|~3.7.0|~3.8.0",
